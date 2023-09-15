@@ -44,7 +44,6 @@ export default function LandingPage() {
         <div className="container mx-auto flex items-center justify-between flex-wrap">
           <img className='w-16 md:w-24' src="https://i.ibb.co/C0gGXvt/KOFFIE-removebg-preview.png" alt="Logo" />
           <div className="space-x-2 md:space-x-4">
-            <a href="#" className="text-gray-600">Home</a>
             <a href="#" className="text-gray-600">Partner contact</a>
           </div>
         </div>
