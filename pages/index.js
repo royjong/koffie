@@ -17,7 +17,7 @@ export default function LandingPage() {
       return;
     }
 
-    try { // Fixed here: Added missing '{'
+    try {
       const res = await fetch('/api/saveEmail', {
         method: 'POST',
         headers: {
@@ -41,9 +41,9 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gray-100 font-sans">
       {/* Navbar */}
       <nav className="bg-white p-4">
-        <div className="container mx-auto flex items-center justify-between">
-          <img className='w-24 md:w-[250px]' src="https://i.ibb.co/C0gGXvt/KOFFIE-removebg-preview.png" />
-          <div className="space-x-4">
+        <div className="container mx-auto flex items-center justify-between flex-wrap">
+          <img className='w-16 md:w-24' src="https://i.ibb.co/C0gGXvt/KOFFIE-removebg-preview.png" alt="Logo" />
+          <div className="space-x-2 md:space-x-4">
             <a href="#" className="text-gray-600">Home</a>
             <a href="#" className="text-gray-600">Partner contact</a>
           </div>
@@ -51,20 +51,34 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-[50vh] lg:h-[70vh] bg-white text-dark px-4">
-        <div className="text-center">
-          <h1 className="text-2xl md:text-2xl lg:text-4xl font-extrabold text-gray-900 mb-2 md:mb-4">
-            Lees elke ochtend het belangrijkste nieuws binnen 1 minuut in je mailbox!☕
+      <section className="flex flex-col items-center justify-center h-full md:h-[50vh] lg:h-[70vh] bg-white text-dark px-4 py-8 md:py-16">
+        <div className="text-center w-full md:w-2/3 lg:w-1/2">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+            Ontvang elke ochtend het ECHTE nieuws in je mailbox!☕
           </h1>
-          <p className="text-sm md:text-md lg:text-lg text-gray-700 mb-2 md:mb-4">
-            Meld je gratis aan, en ontvang elke dag om stipt 08:00 het nieuws in een overzichtelijk formaat in je mail!
-          </p>
-          <form className="space-y-4 w-full max-w-xs md:max-w-md mx-auto" onSubmit={handleSubmit}>
+          <ul className="list-inside text-left text-sm md:text-md lg:text-lg text-gray-700 mb-4 pl-0">
+  <li className="flex items-center">
+    <span className="text-green-500 mr-2">✓</span>
+    <span><b>Geen onzin:</b></span>
+    <span> Elke ochtend 08:00 krijg je een opsomming van het belangrijke nieuws!</span>
+  </li>
+  <li className="flex items-center">
+    <span className="text-green-500 mr-2">✓</span>
+    <span><b>AI Gedreven:</b></span>
+    <span> Wij gebruiken A.I op grote schaal nepnieuws te ontmaskeren & geven jou het echte nieuws!</span>
+  </li>
+  <li className="flex items-center">
+    <span className="text-green-500 mr-2">✓</span>
+    <span><b>Slimmer worden:</b></span>
+    <span> De media wilt je dom houden, wij maken je slimmer!</span>
+  </li>
+</ul>
+          <form className="space-y-4 w-full max-w-md mx-auto" onSubmit={handleSubmit}>
             <input 
               type="email" 
               name="email" 
               placeholder="youremail@domain.com" 
-              className="w-full p-4 rounded-lg bg-opacity-80"
+              className="w-full p-4 rounded-lg border border-indigo-600 focus:ring-2 focus:ring-indigo-600"
               value={email}
               onChange={(e) => setEmail(e.target.value)} 
             />
@@ -77,7 +91,7 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-200 text-gray-600 py-8 mt-auto">
+      <footer className="bg-gray-200 text-gray-600 py-8">
         <div className="container mx-auto text-center">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -87,19 +101,20 @@ export default function LandingPage() {
             <div>
               <h3 className="font-semibold mb-2">Legal</h3>
               <p>KVK: 12345678</p>
-              <p>BTW: NL123456789B01</p>
+              <p>Hoofdkantoor: De Nieuwe Erven 3 Unit 108845431NVCuijk</p>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Mail</h3>
-              <p>info@example.com</p>
+              <p>partners@koffie-momentje.nl</p>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Partners</h3>
-              <a href="#" className="block">Partner Page</a>
+              <a href="#" className="block">Partner Contacte</a>
+              <a href="#" className="block">Onze partners</a>
             </div>
           </div>
           <div className="mt-4">
-            <p>&copy; 2023 KoffieMomentje. All rights reserved.</p>
+            <p>&copy; 2023 Koffie-Momentje.nl. All rights reserved.</p>
           </div>
         </div>
       </footer>
