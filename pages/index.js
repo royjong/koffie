@@ -97,7 +97,7 @@ export default function LandingPage() {
             </div>
             <div>
               <h3 className="font-semibold mb-2">Legal</h3>
-              <p>KVK: 12345678</p>
+              <p>KVK: 86555596</p>
               <p>Hoofdkantoor: De Nieuwe Erven 3 Unit 108845431NVCuijk</p>
             </div>
             <div>
