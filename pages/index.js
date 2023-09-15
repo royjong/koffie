@@ -59,11 +59,11 @@ export default function LandingPage() {
           <ul className="list-inside text-left text-sm md:text-md lg:text-lg text-gray-700 mb-4 pl-0">
   <li className="flex items-center">
     <span className="text-green-500 mr-2">✓</span>
-    <span> Elke ochtend 08:00 krijg je een opsomming van het belangrijke nieuws!</span>
+    <span> Elke ochtend 08:00 krijg je een opsomming van het belangrijkste nieuws!</span>
   </li>
   <li className="flex items-center">
     <span className="text-green-500 mr-2">✓</span>
-    <span> Wij gebruiken A.I op grote schaal nepnieuws te ontmaskeren & geven jou het echte nieuws!</span>
+    <span> Wij gebruiken A.I om op grote schaal nepnieuws te ontmaskeren & geven jou het echte nieuws!</span>
   </li>
   <li className="flex items-center">
     <span className="text-green-500 mr-2">✓</span>
