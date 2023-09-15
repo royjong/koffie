@@ -54,7 +54,7 @@ export default function LandingPage() {
       <section className="flex flex-col items-center justify-center h-full md:h-[50vh] lg:h-[70vh] bg-white text-dark px-4 py-8 md:py-16">
         <div className="text-center w-full md:w-2/3 lg:w-1/2">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
-            Ontvang elke ochtend het ECHTE nieuws in je mailbox!☕
+            Ontvang elke ochtend 08:00 het ECHTE nieuws in je mailbox!☕
           </h1>
           <ul className="list-inside text-left text-sm md:text-md lg:text-lg text-gray-700 mb-4 pl-0">
   <li className="flex items-center">
