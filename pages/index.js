@@ -54,7 +54,7 @@ export default function LandingPage() {
       <section className="flex flex-col items-center justify-center h-full md:h-[50vh] lg:h-[70vh] bg-white text-dark px-4 py-8 md:py-16">
         <div className="text-center w-full md:w-2/3 lg:w-1/2">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
-            Ontvang elke ochtend 08:00 het ECHTE nieuws in je mailbox!☕
+            Wil jij elke ochtend 08:00 het ECHTE nieuws ontvangen?☕
           </h1>
           <ul className="list-inside text-left text-sm md:text-md lg:text-lg text-gray-700 mb-4 pl-0">
   <li className="flex items-center">
@@ -80,7 +80,7 @@ export default function LandingPage() {
               onChange={(e) => setEmail(e.target.value)} 
             />
             <button type="submit" className="w-full p-4 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300">
-              Yes, send me news!
+              Ja, stuur mij de waarheid!
             </button>
             {message && <p className="mt-4 text-indigo-200">{message}</p>}
           </form>
