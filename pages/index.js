@@ -90,24 +90,12 @@ export default function LandingPage() {
       <footer className="bg-gray-200 text-gray-600 py-8">
         <div className="container mx-auto text-center">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <h3 className="font-semibold mb-2">Contact</h3>
+            <div className="flex flex-col items-center">
+              <img className='w-16 md:w-24' src="https://i.ibb.co/C0gGXvt/KOFFIE-removebg-preview.png" alt="Logo" />
+              <h3 className="font-semibold mb-2 mt-2">Contact</h3>
               <a href="#" className="block">Contact Page</a>
             </div>
-            <div>
-              <h3 className="font-semibold mb-2">Legal</h3>
-              <p>KVK: 86555596</p>
-              <p>Hoofdkantoor: De Nieuwe Erven 3 Unit 108845431NVCuijk</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">Mail</h3>
-              <p>partners@koffie-momentje.nl</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">Partners</h3>
-              <a href="#" className="block">Partner Contacte</a>
-              <a href="#" className="block">Onze partners</a>
-            </div>
+            {/* ... existing code ... */}
           </div>
           <div className="mt-4">
             <p>&copy; 2023 Koffie-Momentje.nl. All rights reserved.</p>
